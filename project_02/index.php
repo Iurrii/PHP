@@ -17,6 +17,19 @@
                 $tmp = $f + $g + $h + $i + $j;
                 return $tmp;
             }
+
+            define('DEBUG', 1);
+            function show_error_message($error_message) {
+                if(constant('DEBUG')) {
+                echo "<div class='card-debug'>
+                        <h4>Debug:</h4>"
+                        .PHP_EOL.
+                        "<p>$error_message</p>
+                    </div>";
+                }
+            }
+
+
         ?>
     </script>
 
@@ -26,8 +39,12 @@
         }
         section {
             width: auto;
-            max-width: 50vw;
+            max-width: 60vw;
             margin: auto;
+        }
+        .card-debug {
+            border: 1px solid red;
+            margin: 0px;
         }
     </style>
 
@@ -45,22 +62,25 @@
     </section>
 
     <section>
-        <h2>B) The sum of the numbers 2, 5, 1, 8, 10 is:</h2>
-        <p>
+        <h2>B) $tmp = The sum of the numbers 2, 5, 1, 8, 10 is:</h2>
+        <p>$tmp = 
             <?php
-                print(get_sum_with_return(2, 5, 1, 8, 10))
+                print(get_sum_with_return(2, 5, 1, 8, 10));
             ?>
         </p>
     </section>
 
     <section>
         <h2>C) Find the volume of a cylinder with height 10 and radius 5</h2>
-        <p></p>
+        <p>Ты уже сделал</p>
     </section>
 
     <section>
-        <h2></h2>
-        <p></p>
+        <h2>D) Debug</h2>
+            <?php
+                show_error_message('Alarm!!!');
+            ?>    
+        </div>
     </section>
     
 </body>
