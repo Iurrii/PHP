@@ -22,9 +22,8 @@
             function show_error_message($error_message) {
                 if(constant('DEBUG')) {
                 echo "<div class='card-debug'>
-                        <h4>Debug:</h4>"
-                        .PHP_EOL.
-                        "<p>$error_message</p>
+                        <h4>Debug:</h4>
+                        <p>$error_message</p>
                     </div>";
                 }
             }
