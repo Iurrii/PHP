@@ -1,3 +1,7 @@
+<?php
+session_start();
+session_destroy();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +13,8 @@
 <body>
 
 <p>information has been deleted</p>
-    
+<p>
+    <a href="./index.php">Home</a>
+</p> 
 </body>
 </html>
