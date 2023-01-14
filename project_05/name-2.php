@@ -4,6 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,14 @@ session_start();
 </head>
 
 <script>
-    <?php
+<?php
         $_SESSION['user_name']=$_REQUEST['name'];
     ?>
 </script>
 
 <body>
     <p>
+        Saved name is:</br>
         <?php
             echo $_SESSION['user_name']
         ?>
@@ -26,6 +28,7 @@ session_start();
     <p>
         <a href="./index.php">Home</a>
     </p>
-    
+
 </body>
+
 </html>
