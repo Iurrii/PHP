@@ -1,0 +1,73 @@
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+div{
+    color: black;
+}
+
+aside{
+    background-color: coral;
+    margin-top: 2%;
+}
+
+.crearModificarJugador{
+    background-color: blue;
+    display:inline-table;
+    width: 24.5%;
+    height: 400px;
+
+}
+
+.crearModificarCampio{
+    background-color: pink;
+    display: inline-table;
+    width: 24.5%;
+    height: 400px;
+}
+
+.crearModificarBatalla{
+    background-color: orange;
+    display: inline-table;
+    width: 24.5%;
+    height: 400px;
+}
+
+.eliminar{
+    background-color: red;
+    display: inline-table;
+    width: 24.5%;
+    height: 400px;
+}
+
+.jugadors{
+    display: inline-table;
+    margin-left: 1%;
+    width: 32.6%;
+}
+
+.relacions{
+    display: inline-table;
+    width: 32.6%;
+}
+
+.campions{
+    display: inline-table;
+    width: 32.6%;
+}
+
+input, h3, h1{
+    position: relative;
+    left: 7px;
+}
+
+input{
+    margin-bottom: 2%;
+}
